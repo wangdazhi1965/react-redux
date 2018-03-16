@@ -1,0 +1,17 @@
+# node/npm
+node_modules
+*.log
+
+# build
+build
+lib
+stats.json
+
+# test
+test-results
+
+# WebStorm
+.idea
+
+# VS Code
+.vscode

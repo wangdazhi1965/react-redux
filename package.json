@@ -1,0 +1,78 @@
+{
+  "name": "redux-poc",
+  "version": "0.0.1",
+  "description": "redux",
+  "author": "wangdazhi",
+  "contributors": [
+    "wangdazhi"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --progress --colors --port 2992 --inline",
+    "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
+    "build": "webpack --config webpack-production.config.js --progress --profile --colors",
+    "start-dev": "node lib/server-development",
+    "start": "node lib/server-production"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.14.1",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.0.0-alpha.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cross-env": "^5.1.4",
+    "enzyme": "^3.3.0",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.18.2",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "http-proxy-middleware": "^0.18.0",
+    "jest": "^23.0.0-alpha.0",
+    "npm-watch": "^0.3.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-test-render": "^1.1.1",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.5.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.1.1",
+    "webpack-dev-middleware": "^3.0.1",
+    "webpack-hot-middleware": "^2.21.2"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "redux"
+  ],
+  "license": "ISC"
+}
